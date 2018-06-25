@@ -1,0 +1,27 @@
+'use strict';
+
+// This function isn't used anywhere, so
+// Rollup excludes it from the bundle...
+function square(x) {
+  return x * x * x;
+}
+
+// This function gets included
+
+function foo(x) {
+  if (x) {
+    return square(x);
+  }
+  return -1;
+}
+
+{
+  console.log('-----');
+}
+
+var main = {
+  foo: foo
+};
+
+module.exports = main;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2tldGNoMmh0bWwuY2pzLmpzIiwic291cmNlcyI6WyIuLi9zcmMvbWF0aHMuanMiLCIuLi9zcmMvbWFpbi5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBUaGlzIGZ1bmN0aW9uIGlzbid0IHVzZWQgYW55d2hlcmUsIHNvXG4vLyBSb2xsdXAgZXhjbHVkZXMgaXQgZnJvbSB0aGUgYnVuZGxlLi4uXG5jb25zdCBQSSA9IDMuMTQ7XG5cbmV4cG9ydCBmdW5jdGlvbiBzcXVhcmUoeCkge1xuICByZXR1cm4geCAqIHggKiB4O1xufVxuXG4vLyBUaGlzIGZ1bmN0aW9uIGdldHMgaW5jbHVkZWRcbmV4cG9ydCBmdW5jdGlvbiBjdWJlKHgpIHtcbiAgcmV0dXJuIHggKiB4ICogeCAqIFBJO1xufVxuIiwiaW1wb3J0IHsgc3F1YXJlIH0gZnJvbSAnLi9tYXRocyc7XG5cbmZ1bmN0aW9uIGZvbyh4KSB7XG4gIGlmICh4KSB7XG4gICAgcmV0dXJuIHNxdWFyZSh4KTtcbiAgfVxuICByZXR1cm4gLTE7XG59XG5cbmlmIChwcm9jZXNzLmVudi5OT0RFX0VOViAhPT0gJ3Byb2R1Y3Rpb24nKSB7XG4gIGNvbnNvbGUubG9nKCctLS0tLScpO1xufVxuXG5leHBvcnQgZGVmYXVsdCB7XG4gIGZvb1xufTtcbiJdLCJuYW1lcyI6WyJzcXVhcmUiLCJ4IiwiZm9vIiwibG9nIl0sIm1hcHBpbmdzIjoiOztBQUFBOztBQUVBLEFBRU8sU0FBU0EsTUFBVCxDQUFnQkMsQ0FBaEIsRUFBbUI7U0FDakJBLElBQUlBLENBQUosR0FBUUEsQ0FBZjs7Ozs7QUNIRixTQUFTQyxHQUFULENBQWFELENBQWIsRUFBZ0I7TUFDVkEsQ0FBSixFQUFPO1dBQ0VELE9BQU9DLENBQVAsQ0FBUDs7U0FFSyxDQUFDLENBQVI7OztBQUdGLEFBQTJDO1VBQ2pDRSxHQUFSLENBQVksT0FBWjs7O0FBR0YsV0FBZTs7Q0FBZjs7OzsifQ==
